@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 0.254
 Name:		texlive-selnolig
-Version:	0.254
-Release:	9
+Version:	0.302
+Release:	1
 Summary:	Selectively disable typographic ligatures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/selnolig
