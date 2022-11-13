@@ -1,18 +1,12 @@
-# revision 31544
-# category Package
-# catalog-ctan /macros/luatex/latex/selnolig
-# catalog-date 2013-08-08 08:16:08 +0200
-# catalog-license lppl1.3
-# catalog-version 0.254
 Name:		texlive-selnolig
-Version:	0.302
-Release:	2
+Version:	38721
+Release:	1
 Summary:	Selectively disable typographic ligatures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/selnolig
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -39,12 +33,12 @@ package requires use of a recent LuaLaTeX format (for example
 TeXLive2012 or 2013, or MiKTeX2.9).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -68,7 +62,7 @@ TeXLive2012 or 2013, or MiKTeX2.9).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
