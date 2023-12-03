@@ -1,6 +1,6 @@
 Name:		texlive-selnolig
-Version:	38721
-Release:	2
+Version:	68747
+Release:	1
 Summary:	Selectively disable typographic ligatures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/selnolig
