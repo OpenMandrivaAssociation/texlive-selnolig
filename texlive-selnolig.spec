@@ -3,7 +3,7 @@ Version:	68747
 Release:	1
 Summary:	Selectively disable typographic ligatures
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/selnolig
+URL:		https://www.ctan.org/tex-archive/macros/luatex/latex/selnolig
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/selnolig.doc.r%{version}.tar.xz
